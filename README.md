@@ -321,10 +321,8 @@ if __name__ == "__main__":
 
 Priority Preemptive scheduling is implemented successfully.
 ## AIM:
-
 To implement Priority Non-Preemptive Scheduling
 ## ALGORITHM:
-
 In Priority Non-Preemptive Scheduling, each process is associated with a priority value, which is used to determine the order in which processes are executed. The scheduler selects the process with the highest priority from the ready queue and allows it to execute until completion. If multiple processes have the same highest priority, they are executed in the order they arrived, following a FCFS approach. This algorithm continues until all processes have completed their execution.
 ## PROGRAM:
 ```
@@ -361,10 +359,8 @@ def priority_non_preemptive(processes, burst_time, priorities):
     print("Process\tBurst Time\tPriority\tWaiting Time\tTurnaround Time")
     for i in range(n):
         print(f"{process_info[i][0]}\t{process_info[i][1]}\t\t{process_info[i][2]}\t\t{waiting_time[i]}\t\t{turnaround_time[i]}")
-
     print(f"Average Waiting Time: {average_waiting_time}")
     print(f"Average Turnaround Time: {average_turnaround_time}")
-
 # Example usage:
 if __name__ == "__main__":
     processes = ['P1', 'P2', 'P3', 'P4']
@@ -372,9 +368,7 @@ if __name__ == "__main__":
     priorities = [2, 1, 3, 4]
     priority_non_preemptive(processes, burst_time, priorities)
 ```
-
 ## OUTPUT:
-
 ![image](https://github.com/MrSanthosh-dev/EX.5-IMPLEMENTATION-OF-CPU-SCHEDULING-ALGORITHMS/assets/117916573/db7f21b8-3acc-46f7-88c2-1db1f50cf79a)
 ## RESULT:
 Priority Non-preemptive scheduling is implemented successfully.
